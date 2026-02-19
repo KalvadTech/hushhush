@@ -23,7 +23,7 @@ secret = hushhush.peek(hidden, "my-password")
 
 ## API
 
-### `hide(secret, password, *, security=2, salt=None, server=True)`
+### `hide(secret, password, security=2, salt=None, server=True)`
 
 Encrypts `secret` (bytes) with `password` (str or bytes).
 
@@ -33,7 +33,7 @@ Encrypts `secret` (bytes) with `password` (str or bytes).
 
 Returns a self-describing unicode string.
 
-### `peek(hidden, password, *, expires=None)`
+### `peek(hidden, password, expires=None)`
 
 Decrypts a value produced by `hide()`.
 
